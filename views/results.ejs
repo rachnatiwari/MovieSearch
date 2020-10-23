@@ -1,0 +1,13 @@
+<h1>You requested for <%=movie%>..</h1>
+
+<ul>
+    <% data["Search"].forEach(function(m){ %>
+        <li>
+            <img src=<%=m.Poster%>  alt=<%=m.Title%> >
+            <strong><%=m.Title%></strong> - <%=m["Year"]%>
+        </li>
+    <% }) %>
+</ul>
+<div>
+    <a href="/search"><button>Search anonther movie</button></a>
+</div>
